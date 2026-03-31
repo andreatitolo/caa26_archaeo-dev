@@ -74,6 +74,16 @@ header h1 {
 
 header .subtitle {
   font-size: 48pt;
+  margin: 0;
+}
+
+header .subtitle a:link,
+header .subtitle a:active,
+header .subtitle a:visited,
+header .subtitle a:hover
+{
+  font-family: monospace;
+  color: white;
 }
 
 .logotype {
@@ -221,19 +231,52 @@ header .subtitle {
 }
 
 /* Footer */
-footer {
-  grid-column: span 6;
+#footnote {
+  font-size: 11pt;
+}
+
+#caa2026-logo {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
   padding: 30mm;
-  position: relative;
+}
+
+#caa2026-logo img {
+  height: 90mm;
+}
+
+#service-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15mm;
+  grid-column: span 2;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+}
+
+#service-logos img {
+  height: 25mm;
+  width: auto;
+}
+
+#authors {
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+  padding: 30mm 30mm 30mm 0;
+  gap: 15mm;
 }
 
 #author-list {
   display: flex;
-  flex-direction: row;
-  gap: 10rem;
+  font-size: 14pt;
+  gap: 10mm;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 5rem;
+  align-items: center;
+  justify-content: end;
 }
 
 .author {
@@ -241,40 +284,36 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 0.25rem;
 }
 
 .author img {
-  width: 240px;
-  height: 240px;
+  width: 25mm;
+  height: 25mm;
   border-radius: 50%;
   object-fit: cover;
-	margin-bottom: 2rem;
 }
 
-#service-logos {
+.author b {
+  font-size: 18pt;
+}
+
+#opencollective {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1.5rem 0;
-  position: relative;
+  gap: 5mm;
+  justify-content: start;
 }
 
-#caa2026-logo {
-  height: 160px;
-  position: absolute;
-  left: 0;
+#opencollective img {
+  height: 25mm;
 }
 
-#service-logos .brand-logos {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5rem;
-  margin: 0 auto;
+#opencollective p {
+  text-align: right;
+  margin: auto 0;
 }
 
-#service-logos .brand-logos img {
-  height: 80px;
-  width: auto;
+#opencollective-link {
+  font-size: 30pt;
+  font-family: monospace;
+  font-weight: bold;
 }
